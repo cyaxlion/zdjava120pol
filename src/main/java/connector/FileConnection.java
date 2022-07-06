@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class FileConnection {
-    boolean isConnected = false;
+    private boolean isConnected = false;
     String file;
     public FileConnection(String file) {
         this.file = file;
