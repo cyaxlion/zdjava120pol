@@ -15,11 +15,11 @@ public class FileConnection {
     }
 
     public void connect() throws DBFailException {
-        this.isConnected = true;
         Random rand = new Random();
         if(rand.nextDouble() < 0.25) {
             throw new DBFailException();
         }
+        this.isConnected = true;
     }
 
     public String getData() throws NotConnectedException {
